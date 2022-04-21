@@ -6,8 +6,14 @@ public class Human {
     public Integer age;
     public String eyeColor;
     public Integer height;
-    static int fingers;
+    public static int arms = 2;
+    public static void Say() {
+        System.out.println("Hello!");
+    }
 
+    public static void Walk() {
+        System.out.println("*Walking*");
+    }
 
     public Human(String name, Integer age, String eyeColor, Integer height) {
         this.name = name;
@@ -50,6 +56,10 @@ public class Human {
         System.out.println(human3.toString());
         System.out.println(human4.toString());
         System.out.println(human5.toString());
+
+        Say();
+        Walk();
+        System.out.println(arms);
     }
 
 }
